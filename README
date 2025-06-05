@@ -1,0 +1,53 @@
+Bitcoin News Sentiment Analysis Mini Project
+===============================
+
+Description
+-----------
+This project explores the relationship between news sentiment and the price of Bitcoin. 
+It uses data from the CryptoPanic dataset and analyzes the sentiment of news headlines using multiple models:
+- VADER (NLTK)
+- TextBlob
+- AFINN
+
+The results are compared against historical Bitcoin price data from Yahoo Finance.
+
+Features
+--------
+- Sentiment analysis using VADER, TextBlob, and AFINN
+- Data cleaning and processing
+- Merging sentiment data with BTC price data
+- Visualization:
+    * Histograms of sentiment scores
+    * Monthly-averaged sentiment vs. BTC price
+    * Separate plots for each model
+
+Libraries Used
+--------------
+- pandas (data handling)
+- matplotlib (visualizations)
+- nltk (VADER sentiment)
+- textblob (TextBlob sentiment)
+- afinn (AFINN sentiment)
+- yfinance (BTC price data)
+
+Installation
+------------
+Install the required libraries using pip:
+
+    pip install requests pandas matplotlib nltk textblob afinn yfinance
+
+
+Usage
+-----
+- Fetch news data from CryptoPanic API or load from pre-downloaded CSV files.
+- Analyze the sentiment of the news headlines.
+- Merge the sentiment data with daily BTC price data from Yahoo Finance.
+- Generate plots to compare sentiment with BTC price trends.
+
+Results
+-------
+- Sentiment scores tend to cluster around neutral due to short, objective headlines.
+- Clear visual comparison of VADER, TextBlob, and AFINN sentiment scores.
+- Some patterns between sentiment and BTC price may be observed.
+
+# Dataset source: https://github.com/soheilrahsaz/cryptoNewsDataset/tree/main
